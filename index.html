@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator Shooting Cats</title>
+    <link rel="stylesheet" href="css/GameStyle.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <img id="logo-oznkb" src="img/logo-direito.png" alt="OZNKB-direitos-reservados" title="OZNKB-direitos-reservados">
+    <div class="rain front-row"></div>
+
+    <audio loop id="myAudio">
+        <source src="./effects/flying.mp3" type="audio/mpeg" /></audio>
+    <audio loop id="introEffect">
+        <source src="./effects/introEffect.mp3" type="audio/mpeg" /></audio>
+    <audio loop id="musicthemestart">
+        <source src="./effects/musicthemestart.mp3" type="audio/mpeg" /></audio>
+    <audio loop id="musicthemeround1">
+        <source src="./effects/musicthemeround1.mp3" type="audio/mpeg" /></audio>
+
+    <audio id="shootSound">
+        <source src="./effects/shootSound.mp3" type="audio/mpeg" /></audio>
+    <audio id="soundStart">
+        <source src="./effects/button-start.mp3" type="audio/mpeg" /></audio>
+    <audio id="deathMob">
+        <source src="./effects/deathMob.mp3" type="audio/mpeg" /></audio>
+    <audio id="winGameSound">
+        <source src="./effects/winGameSound.mp3" type="audio/mpeg" /></audio>
+
+    <input id="usuario">
+    <button id="submit" type="submit">Salvar usuário</button>
+
+    <input id="get-usuario">
+    <button id="getUsuario" type="submit">Entrar usuário</button>
+
+    <div id="container-start">
+        <h3>simulator shooting cats</h3>
+        <p id="score-button"> Top Score </p>
+        <p id="start-button" class="animation-press"> Start </p>
+    </div>
+    <div id="mask-dialog"></div>
+    <div id="dialog-help">
+        <img width="100%" src="img/dialog-person.svg">
+        <div id="dialog-help-woff">
+            <h2 id="textWoff"></h2>
+            <span class="animation-press" id="close-button-dialog">Aceitar a missao ></span>
+        </div>
+    </div>
+    <div id="dialog-win">
+        <div id="dialog-win-text">
+            <h2 id="textWin">Woff !, oh obrigado, voce eliminou todos eles, estamos a salvo gracas a voce, <br />
+                obrigado por tudo viajante!</h2>
+            <span id="close-button-dialog-win">Encerrar jornada ></span>
+        </div>
+    </div>
+    <div class="heliponto stop"></div>
+    <div id="dialog-copyright">
+        <span>Seja Bem-vindo ao jogo Simulator shooting cats, todos os direitos estao reservados a empresa produtora
+            oznkb, nao permitimos qualquer plagio. Bom jogo!</span>
+        <span id="close-button-dialog-copyright">Compreendo e quero continuar ></span>
+    </div>
+    <script src="js/GameFunction.js"></script>
+</body>
+
+</html>
